@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+           .circle{
+            width:27px;
+        height: 27px;
+        border-radius: 50%;
+        align-items: center;
+        margin: -26rem 43.8rem;
+        background-color: gold;
+    animation: blink 1s infinite;
+}
+     
+        @keyframes blink{
+            0%{
+opacity: 0;
+            }
+            50%{
+opacity: 1;
+            }
+      }
+      .tree-container {
+        width: 0;
+        height: 0;
+        position: relative;
+      }
+      .tree {
+        width: 0;
+        height: 0;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-bottom: 75px solid rgb(4, 106, 4);
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        display: flex;
+        margin-top: 10rem;
+        margin-left: 40rem;
+      }
+      .tree2 {
+        position: inherit;
+        border-left: 125px solid transparent;
+        border-right: 125px solid transparent;
+        border-bottom: 125px solid  rgb(4, 106, 4);
+        margin-top: 10rem;
+      }
+      .tree3 {
+        border-left: 175px solid transparent;
+        border-right: 175px solid transparent;
+        border-bottom: 175px solid  rgb(4, 106, 4);
+        margin-top: 1rem;
+        margin-left: -11rem;
+        position: absolute;
+      }
+      .tree4 {
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 200px solid  rgb(4, 106, 4);
+        margin-top: 2rem;
+        margin-left: -12rem;
+        position: absolute;
+      }
+   
+      .trunk {
+        width: 55px;
+height: 115px;
+background-color: brown;
+margin-top: 12rem;
+margin-left: 43.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tree-container">
+      <div class="tree">
+        <div class="tree2">
+          <div class="tree3">
+            <div class="tree4">
+            
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="trunk"></div>
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>
