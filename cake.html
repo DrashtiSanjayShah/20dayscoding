@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake</title>
+    <style>
+      body {
+        background-color: pink;
+      }
+      .cylinder {
+        /* whatever values/units you want */
+        width: 250px;
+        height: 250px;
+        border-radius: 100% / 80px;
+        background:rgb(223, 223, 255);
+        margin-top: 13rem;
+        margin-left: 37rem;
+        position: inherit;
+        border: 1px solid black;
+      }
+      .heart-container,
+      .heart,
+      .heart2,
+      .heart3,
+      .heart4,
+      .heart5,
+      .heart6,.heart7,.heart8 {
+        width: 25px;
+        height: 25px;
+        transform: rotate(-45deg);
+        position: relative;
+        margin-top: -9rem;
+        margin-left: 40rem;
+        background-color: red;
+      }
+
+      .heart-container::before,
+      .heart-container::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .heart-container::before {
+        top: -14px;
+        left: 0;
+      }
+
+      .heart-container::after {
+        top: 0;
+        left: 14px;
+      }
+      .heart {
+        transform: rotate(145deg);
+        position: absolute;
+        margin-top: 8rem;
+        margin-left: 6rem;
+      }
+      .heart::before,
+      .heart::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .heart::before {
+        top: -14px;
+        left: 0;
+      }
+
+      .heart::after {
+        top: 0;
+        left: 14px;
+      }
+
+      .heart2 {
+        transform: rotate(-215deg);
+        position: absolute;
+        margin-top: 6rem;
+        margin-left: 5rem;
+      }
+      .heart2::before,
+      .heart2::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .heart2::before {
+        top: -14px;
+        left: 0;
+      }
+
+      .heart2::after {
+        top: 0;
+        left: 14px;
+      }
+      .heart3 {
+        transform: rotate(-50deg);
+        position: absolute;
+        margin-top: 8rem;
+        margin-left: 6rem;
+      }
+      .heart3::before,
+      .heart3::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .heart3::before {
+        top: -14px;
+        left: 0;
+      }
+
+      .heart3::after {
+        top: 0;
+        left: 14px;
+      }
+      .heart4 {
+        transform: rotate(-152deg);
+        position: absolute;
+        margin-top: -6rem;
+        margin-left: 1rem;
+      }
+      .heart4::before,
+      .heart4::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .heart4::before {
+        top: -14px;
+        left: 0;
+      }
+
+      .heart4::after {
+        top: 0;
+        left: 14px;
+      }
+      .heart5 {
+        transform: rotate(15deg);
+        position: absolute;
+        margin-top: -3rem;
+        margin-left: -8rem;
+      }
+      .heart5::before,
+      .heart5::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .heart5::before {
+        top: -14px;
+        left: 0;
+      }
+
+      .heart5::after {
+        top: 0;
+        left: 14px;
+      }
+
+      .heart6 {
+        transform: rotate(-18deg);
+        position: absolute;
+        margin-top: 1rem;
+        margin-left: 13rem;
+      }
+      .heart6::before,
+      .heart6::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .heart6::before {
+        top: -14px;
+        left: 0;
+      }
+
+      .heart6::after {
+        top: 0;
+        left: 14px;
+      }
+      .heart7 {
+        transform: rotate(-59deg);
+position: absolute;
+margin-top: 5rem;
+margin-left: -9rem;
+      }
+      .heart7::before,
+      .heart7::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .heart7::before {
+        top: -15px;
+        left: 0;
+      }
+
+      .heart7::after {
+        top: 0;
+        left: 15px;
+      }
+      .heart8 {
+        transform: rotate(-159deg);
+position: absolute;
+margin-top: -3rem;
+margin-left: 8rem;
+      }
+      .heart8::before,
+      .heart8::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .heart8::before {
+        top: -15px;
+        left: 0;
+      }
+
+      .heart8::after {
+        top: 0;
+        left: 15px;
+      }
+      .circle-container,
+      .circle,
+      .circle2,
+      .circle3,
+      .circle4,
+      .circle5,
+      .circle6 {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(209, 57, 133);
+        position: absolute;
+      }
+      .circle-container {
+        margin-left: 39rem;
+        margin-top: 3rem;
+      }
+      .circle {
+        margin-left: 12rem;
+        margin-top: 0rem;
+      }
+
+      .circle3 {
+        margin-left: -8rem;
+        margin-top: -3rem;
+      }
+      .circle4 {
+        margin-left: 8rem;
+        margin-top: -3rem;
+      }
+      .circle5 {
+        margin-left: -6rem;
+        margin-top: 9rem;
+      }
+      .circle6 {
+        margin-left: -6rem;
+        margin-top: -12rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cylinder"></div>
+    <div class="heart-container">
+      <div class="heart">
+        <div class="heart2">
+          <div class="heart3">
+            <div class="heart4">
+              <div class="heart5">
+                <div class="heart6">
+                  <div class="heart7">
+                    <div class="heart8"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="circle-container">
+      <div class="circle">
+        <div class="circle2">
+          <div class="circle3">
+            <div class="circle4">
+              <div class="circle5">
+                <div class="circle6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
