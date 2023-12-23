@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Flag</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .flag {
+        border-left: solid 100px transparent;
+        border-right: solid 100px transparent;
+        border-bottom: solid 100px red;
+        top: 12rem;
+        left: 42rem;
+        position: absolute;
+        transform: rotate(90deg);
+      }
+      .stick {
+        width: 12px;
+        height: 27rem;
+        background-color: brown;
+        position: absolute;
+        transform: rotate(90deg);
+        margin-top: -7rem;
+        left: 6.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div class="stick"></div>
+    </div>
+  </body>
+</html>
